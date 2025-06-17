@@ -1,0 +1,214 @@
+body{
+    margin: 0px;
+    background-color: hsla(0, 0%, 50%, 0.218);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h1{
+    border: 3px solid rgba(0, 0, 0, 0.659);
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.659);
+    text-shadow: 2px 2px 5px hsl(0, 58%, 38%);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+form h1:after{
+    content: "🎓";
+}
+
+form label{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+form input, form select{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.selections{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.659);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 300px;
+    text-align: center;
+    background-color: hsl(55, 67%, 80%);
+    transition: background-color 0.5s ease;
+}
+
+.selections:hover{
+    background-color: hsla(55, 67%, 70%);
+}
+
+form button{
+    background-color: hsl(120, 84%, 55%);
+    transition: background-color 0.5s ease;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: hsl(120, 84%, 45%);
+}
+
+#loading-and-generate{
+    text-align: center;
+    background-color: hsla(0, 100%, 50%, 0.64);
+    color: hsl(0, 0%, 100%);
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 2rem;
+
+
+}
+#loading-and-generate::before{
+    content: "*";
+    color: hsla(0, 0%, 0%, 0.651);
+    text-shadow: none;
+}
+#loading-and-generate::after{
+    content: "*";
+    color: hsla(0, 0%, 0%, 0.651);
+    text-shadow: none;
+}
+
+ol, .answer-choices {
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.display span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+    
+}
+.question{
+    width: 200px;
+    text-decoration: underline;
+}
+
+.question-number{
+    color: hsla(0, 100%, 50%, 0.726);
+}
+
+.answer-choices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 10px 0px;
+    margin: 0 auto;
+    max-width: fit-content;
+
+}
+
+.answer-choices button{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.answer-choices button:hover{
+    background-color: hsla(0, 0%, 100%, 0.636);
+}
+
+.display-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-quiz{
+     width: 30%;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bolder;
+     font-size: 2rem;
+     background-color: hsla(60, 100%, 50%, 0.884);
+     border: 2px solid black;
+     border-radius: 10px;
+     margin: 0 auto;
+     cursor: pointer;
+}
+.submit-quiz:hover{
+    background-color: hsla(60, 100%, 50%, 0.571);
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    pointer-events: none;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    background-color: rgba(217, 255, 0, 0.17);
+    border-radius: 20px;
+    max-width: 1000px;
+}
+
+.score h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+
+.score li{
+    list-style: none;
+}
+
+.score button{
+    margin-bottom: 10px;
+    font-family: bold;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: 3px solid black;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    transition: background-color 0.5s ease;
+    width: 250px;
+}
+.score button:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.score #text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
