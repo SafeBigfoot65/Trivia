@@ -59,4 +59,5 @@ This is a responsive trivia quiz application built with React and Vite. It allow
 - Vite
 - Open Trivia Database API
 - CSS (Grid & Flexbox) for responsive layout
+- Vercel for Deployment
 
